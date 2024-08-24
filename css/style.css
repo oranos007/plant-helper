@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: montserrat;
+  box-sizing: border-box;
+
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(hero-illustration-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 800px;
+  height: 450px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: 1px 1px 10px 1px #80808070;
+  position: relative;
+  bottom: 100px;
+  accent-color: #30ad4c;
+}
+.header {
+  width: 100vw;
+  height: 200px;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  transform-origin: 0;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 0;
+  z-index: 1;
+}
+.header .logo h3 {
+  color: #7e7e7e;
+  margin-left: 15px;
+}
+.header .logo {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.container h1 {
+  color: #30ad4c;
+}
+.container .google {
+  cursor: pointer;
+  width: 320px;
+  z-index: 10000;
+  border: 2px solid #30ad4c;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 18px 0 5px 0;
+}
+.container .google span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .google:hover {
+  background-color: #59b86ec7;
+}
+.container input {
+  outline: none;
+  width: 320px;
+  z-index: 10000;
+  border: 2px solid #30ad4c;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 18px 0 5px 0;
+}
+
+.container .more {
+  width: 320px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-bottom: 16px;
+}
+.container .more .checkbox input#checkbox {
+  width: 20px;
+}
+.container .more .checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .more .checkbox label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5.5px;
+}
+
+.container .more a {
+  margin-top: 14px;
+}
+.container button {
+  cursor: pointer;
+  width: 320px;
+  z-index: 10000;
+  border: none;
+  padding: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 6px 0 5px 0;
+  background-color: #30ad4c;
+}
+.container button:hover {
+  background-color: #3c8e4ee7;
+}
+.container p {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10000000;
+}
+a {
+  color: #30ad4c;
+}
+.pics {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.pics img:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  right:20% ;
+}
+.pics img:nth-child(1) {
+  position: absolute;
+  bottom: 45px;
+  left: 25%;
+}
+
+
+@media (max-width:1100px){
+  body {
+    background-size: 100%;
+  }
+  .header{
+    justify-content: center;
+  }
+  .header img:nth-child(2){
+    display: none;
+  }
+  .container {
+    width: 80%;
+
+  }
+  .pics img:nth-child(2) {
+    bottom: -20px;
+    left:60% ;
+  }
+  .pics img:nth-child(1) {
+    bottom: 45px;
+    left: 10%;
+  }
+  button,
+  .google,
+  input,
+  .more{
+    width: 50%;
+  }
+
+  .header {
+    height: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 150px;
+  }
+}
+@media (max-width:650px){
+
+  .pics img:nth-child(2) {
+    bottom: 30px;
+    left:50% ;
+    width: 50%;
+    height: auto;
+    z-index: 1000;
+  }
+  .container button{
+    z-index: 100;
+    
+  }
+  .pics img:nth-child(1) {
+    bottom: 75px;
+    left: 10%;
+    z-index: 100000;
+    width: 15%;
+    height: auto;
+  }
+  
+  .container button,
+  .container .google,
+  .container input,
+  .container .more{
+    width: 80%;
+  }
+
+
+}
+@media (max-width:500px){
+  h3{
+    font-size:1.2em ;
+  }
+.container{
+  width: 90%;
+}
+  .pics img:nth-child(2) {
+    bottom: 80px;
+    left:50% ;
+  }
+  .pics img:nth-child(1) {
+    bottom: 110px;
+    left: 10%;
+    z-index: 100000;
+  }
+  .container button,
+  .container .google,
+  .container input,
+  .container .more{
+    width: 80%;
+  }
+
+
+}
