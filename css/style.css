@@ -19,7 +19,6 @@ body {
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-  
 }
 .container {
   width: 800px;
@@ -81,6 +80,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.container .google:active,
 .container .google:hover {
   background-color: #59b86ec7;
 }
@@ -137,6 +137,7 @@ body {
   margin: 6px 0 5px 0;
   background-color: #30ad4c;
 }
+.container button:active,
 .container button:hover {
   background-color: #3c8e4ee7;
 }
