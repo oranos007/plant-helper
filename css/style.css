@@ -3,7 +3,10 @@
   margin: 0;
   font-family: montserrat;
   box-sizing: border-box;
-
+  -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 body {
   width: 100vw;
@@ -15,10 +18,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-tap-highlight-color: transparent;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 .container {
   width: 800px;
